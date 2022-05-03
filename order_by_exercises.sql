@@ -1,25 +1,28 @@
 USE employees;
 
-# ************ WHERE EXERCISES PART 1 *****************
+# ************ ORDER BY EXERCISES *****************
 # ************ 1 **********
 # Create File
 
 # ************ 2 **********
 SELECT first_name
 FROM employees
-WHERE first_name IN ('Irena', 'Vidya', 'Maya');
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name;
 
 # ************ 3 **********
 SELECT last_name
 FROM employees
-WHERE last_name LIKE 'E%';
+WHERE last_name LIKE 'E%'
+ORDER BY emp_no DESC;
 
 # ************ 4 **********
 SELECT last_name
 FROM employees
-WHERE last_name LIKE '%q%';
+WHERE last_name LIKE '%q%'
+ORDER BY emp_no DESC;
 
-# ************ EXERCISES PART 2 *****************
+# ************ EXERCISE PART 2 *****************
 # ************ 1 & 2 **********
 SELECT first_name
 FROM employees
@@ -31,13 +34,13 @@ WHERE first_name = 'Irena' AND gender = 'M'
 SELECT last_name
 FROM employees
 WHERE last_name LIKE 'E%'
-OR last_name LIKE '%E';
+   OR last_name LIKE '%E';
 
 # ************ 4 *************
 SELECT last_name
 FROM employees
 WHERE last_name LIKE 'E%'
-   AND last_name LIKE '%E';
+  AND last_name LIKE '%E';
 
 # ************ 5 *************
 SELECT last_name
