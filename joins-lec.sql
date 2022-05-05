@@ -93,11 +93,4 @@ FROM players AS p
 # FROM players AS p
 #     JOIN player_position AS pp on p.id = pp.player_id
 # JOIN  player_position AS pos on p.id;
-# USE employees;
-# # what do we want
-# SELECT d.dept_name AS 'Department Name',
-#        CONCAT(e.first_name, ' ', e.last_name) AS 'Department Manager'
-# FROM employees AS e
-# JOIN dept_manager dm ON e.emp_no = dm.emp_no
-# JOIN departments AS d ON dm.dept_no = d.dept_no
-# WHERE dm.to_date > CURDATE();
+
