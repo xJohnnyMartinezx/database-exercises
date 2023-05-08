@@ -1,2 +1,14 @@
 .idea
 *.iml
+
+
+# MacOS
+.DS_Store
+
+# IntelliJ
+.idea/*
+
+
+# Compiled output
+*.class
+out/*
